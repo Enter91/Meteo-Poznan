@@ -1,0 +1,1 @@
+PODS_METEO_POZNAN__MOTIS_OTHER_LDFLAGS = -framework "Foundation"

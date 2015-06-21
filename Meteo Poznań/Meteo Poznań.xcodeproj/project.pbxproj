@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CC990671B36C80A007CF656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC990661B36C80A007CF656 /* main.m */; };
+		1CC9906A1B36C80A007CF656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC990691B36C80A007CF656 /* AppDelegate.m */; };
+		1CC990701B36C80A007CF656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC9906E1B36C80A007CF656 /* Main.storyboard */; };
+		1CC990721B36C80A007CF656 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC990711B36C80A007CF656 /* Images.xcassets */; };
+		1CC990751B36C80A007CF656 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC990731B36C80A007CF656 /* LaunchScreen.xib */; };
+		1CC990811B36C80A007CF656 /* Meteo_Poznan_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC990801B36C80A007CF656 /* Meteo_Poznan_Tests.m */; };
+		1CC9908D1B36C900007CF656 /* MainWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC9908C1B36C900007CF656 /* MainWeatherViewController.m */; };
+		1CC990951B36C98A007CF656 /* DayWeatherCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC990941B36C98A007CF656 /* DayWeatherCollectionViewCell.m */; };
+		1CC990991B36CBD5007CF656 /* NSDate+RequestStringDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC990981B36CBD5007CF656 /* NSDate+RequestStringDate.m */; };
+		1CC9909C1B36CC51007CF656 /* AFHTTPRequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC9909B1B36CC51007CF656 /* AFHTTPRequestMaker.m */; };
+		1CC9909F1B36D135007CF656 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC9909E1B36D135007CF656 /* CityModel.m */; };
+		1CC990A21B36D2A7007CF656 /* TemperatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC990A11B36D2A7007CF656 /* TemperatureModel.m */; };
+		1CC990A51B36D2B8007CF656 /* DayWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC990A41B36D2B8007CF656 /* DayWeatherModel.m */; };
+		1CC990A81B36D31F007CF656 /* WeatherDescriptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC990A71B36D31F007CF656 /* WeatherDescriptionModel.m */; };
+		1CC990AE1B36DF7A007CF656 /* WeatherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC990AD1B36DF7A007CF656 /* WeatherManager.m */; };
+		1CC990B11B36E3CD007CF656 /* WeatherForecastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC990B01B36E3CD007CF656 /* WeatherForecastModel.m */; };
+		52C6334C499D3A4CAE742FA4 /* libPods-Meteo Poznań.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDEB0FC485777CFA72CABB0 /* libPods-Meteo Poznań.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CC9907B1B36C80A007CF656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC990591B36C80A007CF656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC990601B36C80A007CF656;
+			remoteInfo = "Meteo Poznań";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CC990611B36C80A007CF656 /* Meteo Poznań.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meteo Poznań.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC990651B36C80A007CF656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC990661B36C80A007CF656 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CC990681B36C80A007CF656 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1CC990691B36C80A007CF656 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1CC9906F1B36C80A007CF656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CC990711B36C80A007CF656 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1CC990741B36C80A007CF656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1CC9907A1B36C80A007CF656 /* Meteo PoznańTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meteo PoznańTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC9907F1B36C80A007CF656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC990801B36C80A007CF656 /* Meteo_Poznan_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meteo_Poznan_Tests.m; sourceTree = "<group>"; };
+		1CC9908B1B36C900007CF656 /* MainWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWeatherViewController.h; sourceTree = "<group>"; };
+		1CC9908C1B36C900007CF656 /* MainWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWeatherViewController.m; sourceTree = "<group>"; };
+		1CC990931B36C98A007CF656 /* DayWeatherCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayWeatherCollectionViewCell.h; sourceTree = "<group>"; };
+		1CC990941B36C98A007CF656 /* DayWeatherCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayWeatherCollectionViewCell.m; sourceTree = "<group>"; };
+		1CC990971B36CBD5007CF656 /* NSDate+RequestStringDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RequestStringDate.h"; sourceTree = "<group>"; };
+		1CC990981B36CBD5007CF656 /* NSDate+RequestStringDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RequestStringDate.m"; sourceTree = "<group>"; };
+		1CC9909A1B36CC51007CF656 /* AFHTTPRequestMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestMaker.h; sourceTree = "<group>"; };
+		1CC9909B1B36CC51007CF656 /* AFHTTPRequestMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestMaker.m; sourceTree = "<group>"; };
+		1CC9909D1B36D135007CF656 /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		1CC9909E1B36D135007CF656 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		1CC990A01B36D2A7007CF656 /* TemperatureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureModel.h; sourceTree = "<group>"; };
+		1CC990A11B36D2A7007CF656 /* TemperatureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureModel.m; sourceTree = "<group>"; };
+		1CC990A31B36D2B8007CF656 /* DayWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayWeatherModel.h; sourceTree = "<group>"; };
+		1CC990A41B36D2B8007CF656 /* DayWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayWeatherModel.m; sourceTree = "<group>"; };
+		1CC990A61B36D31F007CF656 /* WeatherDescriptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDescriptionModel.h; sourceTree = "<group>"; };
+		1CC990A71B36D31F007CF656 /* WeatherDescriptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDescriptionModel.m; sourceTree = "<group>"; };
+		1CC990AC1B36DF7A007CF656 /* WeatherManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherManager.h; sourceTree = "<group>"; };
+		1CC990AD1B36DF7A007CF656 /* WeatherManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherManager.m; sourceTree = "<group>"; };
+		1CC990AF1B36E3CD007CF656 /* WeatherForecastModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherForecastModel.h; sourceTree = "<group>"; };
+		1CC990B01B36E3CD007CF656 /* WeatherForecastModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherForecastModel.m; sourceTree = "<group>"; };
+		D991BF40927249548AC96B11 /* Pods-Meteo Poznań.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meteo Poznań.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meteo Poznań/Pods-Meteo Poznań.release.xcconfig"; sourceTree = "<group>"; };
+		DBDEB0FC485777CFA72CABB0 /* libPods-Meteo Poznań.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Meteo Poznań.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBACDBC9BF698B69A770DC97 /* Pods-Meteo Poznań.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meteo Poznań.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meteo Poznań/Pods-Meteo Poznań.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CC9905E1B36C80A007CF656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C6334C499D3A4CAE742FA4 /* libPods-Meteo Poznań.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC990771B36C80A007CF656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CC990581B36C80A007CF656 = {
+			isa = PBXGroup;
+			children = (
+				1CC990631B36C80A007CF656 /* Meteo Poznań */,
+				1CC9907D1B36C80A007CF656 /* Meteo PoznańTests */,
+				1CC990621B36C80A007CF656 /* Products */,
+				CD64C197A1BD5FCA61A1754C /* Pods */,
+				4BFF4C8A79703E1DB05B6826 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CC990621B36C80A007CF656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CC990611B36C80A007CF656 /* Meteo Poznań.app */,
+				1CC9907A1B36C80A007CF656 /* Meteo PoznańTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CC990631B36C80A007CF656 /* Meteo Poznań */ = {
+			isa = PBXGroup;
+			children = (
+				1CC990961B36CBC6007CF656 /* Categories */,
+				1CC990901B36C956007CF656 /* Networking */,
+				1CC9908F1B36C94D007CF656 /* Models */,
+				1CC9908E1B36C949007CF656 /* Weather Manager */,
+				1CC990921B36C970007CF656 /* Collection View Cells */,
+				1CC9908A1B36C8E0007CF656 /* Controllers */,
+				1CC990681B36C80A007CF656 /* AppDelegate.h */,
+				1CC990691B36C80A007CF656 /* AppDelegate.m */,
+				1CC9906E1B36C80A007CF656 /* Main.storyboard */,
+				1CC990711B36C80A007CF656 /* Images.xcassets */,
+				1CC990731B36C80A007CF656 /* LaunchScreen.xib */,
+				1CC990641B36C80A007CF656 /* Supporting Files */,
+			);
+			path = "Meteo Poznań";
+			sourceTree = "<group>";
+		};
+		1CC990641B36C80A007CF656 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CC990651B36C80A007CF656 /* Info.plist */,
+				1CC990661B36C80A007CF656 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CC9907D1B36C80A007CF656 /* Meteo PoznańTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC990801B36C80A007CF656 /* Meteo_Poznan_Tests.m */,
+				1CC9907E1B36C80A007CF656 /* Supporting Files */,
+			);
+			path = "Meteo PoznańTests";
+			sourceTree = "<group>";
+		};
+		1CC9907E1B36C80A007CF656 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CC9907F1B36C80A007CF656 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CC9908A1B36C8E0007CF656 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CC9908B1B36C900007CF656 /* MainWeatherViewController.h */,
+				1CC9908C1B36C900007CF656 /* MainWeatherViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1CC9908E1B36C949007CF656 /* Weather Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1CC990AC1B36DF7A007CF656 /* WeatherManager.h */,
+				1CC990AD1B36DF7A007CF656 /* WeatherManager.m */,
+			);
+			name = "Weather Manager";
+			sourceTree = "<group>";
+		};
+		1CC9908F1B36C94D007CF656 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CC9909D1B36D135007CF656 /* CityModel.h */,
+				1CC9909E1B36D135007CF656 /* CityModel.m */,
+				1CC990A01B36D2A7007CF656 /* TemperatureModel.h */,
+				1CC990A11B36D2A7007CF656 /* TemperatureModel.m */,
+				1CC990A31B36D2B8007CF656 /* DayWeatherModel.h */,
+				1CC990A41B36D2B8007CF656 /* DayWeatherModel.m */,
+				1CC990A61B36D31F007CF656 /* WeatherDescriptionModel.h */,
+				1CC990A71B36D31F007CF656 /* WeatherDescriptionModel.m */,
+				1CC990AF1B36E3CD007CF656 /* WeatherForecastModel.h */,
+				1CC990B01B36E3CD007CF656 /* WeatherForecastModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1CC990901B36C956007CF656 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1CC9909A1B36CC51007CF656 /* AFHTTPRequestMaker.h */,
+				1CC9909B1B36CC51007CF656 /* AFHTTPRequestMaker.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		1CC990921B36C970007CF656 /* Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1CC990931B36C98A007CF656 /* DayWeatherCollectionViewCell.h */,
+				1CC990941B36C98A007CF656 /* DayWeatherCollectionViewCell.m */,
+			);
+			name = "Collection View Cells";
+			sourceTree = "<group>";
+		};
+		1CC990961B36CBC6007CF656 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1CC990971B36CBD5007CF656 /* NSDate+RequestStringDate.h */,
+				1CC990981B36CBD5007CF656 /* NSDate+RequestStringDate.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		4BFF4C8A79703E1DB05B6826 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBDEB0FC485777CFA72CABB0 /* libPods-Meteo Poznań.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD64C197A1BD5FCA61A1754C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBACDBC9BF698B69A770DC97 /* Pods-Meteo Poznań.debug.xcconfig */,
+				D991BF40927249548AC96B11 /* Pods-Meteo Poznań.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CC990601B36C80A007CF656 /* Meteo Poznań */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC990841B36C80A007CF656 /* Build configuration list for PBXNativeTarget "Meteo Poznań" */;
+			buildPhases = (
+				02F258C188DBA1BD8FDAE9B3 /* Check Pods Manifest.lock */,
+				1CC9905D1B36C80A007CF656 /* Sources */,
+				1CC9905E1B36C80A007CF656 /* Frameworks */,
+				1CC9905F1B36C80A007CF656 /* Resources */,
+				DC4E92F5E52D93F1D83311E0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meteo Poznań";
+			productName = "Meteo Poznań";
+			productReference = 1CC990611B36C80A007CF656 /* Meteo Poznań.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CC990791B36C80A007CF656 /* Meteo PoznańTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC990871B36C80B007CF656 /* Build configuration list for PBXNativeTarget "Meteo PoznańTests" */;
+			buildPhases = (
+				1CC990761B36C80A007CF656 /* Sources */,
+				1CC990771B36C80A007CF656 /* Frameworks */,
+				1CC990781B36C80A007CF656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC9907C1B36C80A007CF656 /* PBXTargetDependency */,
+			);
+			name = "Meteo PoznańTests";
+			productName = "Meteo PoznańTests";
+			productReference = 1CC9907A1B36C80A007CF656 /* Meteo PoznańTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CC990591B36C80A007CF656 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Michal Czwarnowski";
+				TargetAttributes = {
+					1CC990601B36C80A007CF656 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					1CC990791B36C80A007CF656 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 1CC990601B36C80A007CF656;
+					};
+				};
+			};
+			buildConfigurationList = 1CC9905C1B36C80A007CF656 /* Build configuration list for PBXProject "Meteo Poznań" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CC990581B36C80A007CF656;
+			productRefGroup = 1CC990621B36C80A007CF656 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CC990601B36C80A007CF656 /* Meteo Poznań */,
+				1CC990791B36C80A007CF656 /* Meteo PoznańTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CC9905F1B36C80A007CF656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC990701B36C80A007CF656 /* Main.storyboard in Resources */,
+				1CC990751B36C80A007CF656 /* LaunchScreen.xib in Resources */,
+				1CC990721B36C80A007CF656 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC990781B36C80A007CF656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02F258C188DBA1BD8FDAE9B3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC4E92F5E52D93F1D83311E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meteo Poznań/Pods-Meteo Poznań-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CC9905D1B36C80A007CF656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC9908D1B36C900007CF656 /* MainWeatherViewController.m in Sources */,
+				1CC9909C1B36CC51007CF656 /* AFHTTPRequestMaker.m in Sources */,
+				1CC9906A1B36C80A007CF656 /* AppDelegate.m in Sources */,
+				1CC990A51B36D2B8007CF656 /* DayWeatherModel.m in Sources */,
+				1CC990951B36C98A007CF656 /* DayWeatherCollectionViewCell.m in Sources */,
+				1CC990A21B36D2A7007CF656 /* TemperatureModel.m in Sources */,
+				1CC9909F1B36D135007CF656 /* CityModel.m in Sources */,
+				1CC990991B36CBD5007CF656 /* NSDate+RequestStringDate.m in Sources */,
+				1CC990AE1B36DF7A007CF656 /* WeatherManager.m in Sources */,
+				1CC990B11B36E3CD007CF656 /* WeatherForecastModel.m in Sources */,
+				1CC990671B36C80A007CF656 /* main.m in Sources */,
+				1CC990A81B36D31F007CF656 /* WeatherDescriptionModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC990761B36C80A007CF656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC990811B36C80A007CF656 /* Meteo_Poznan_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CC9907C1B36C80A007CF656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC990601B36C80A007CF656 /* Meteo Poznań */;
+			targetProxy = 1CC9907B1B36C80A007CF656 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CC9906E1B36C80A007CF656 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC9906F1B36C80A007CF656 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CC990731B36C80A007CF656 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC990741B36C80A007CF656 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CC990821B36C80A007CF656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CC990831B36C80A007CF656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CC990851B36C80A007CF656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBACDBC9BF698B69A770DC97 /* Pods-Meteo Poznań.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Meteo Poznań/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CC990861B36C80A007CF656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D991BF40927249548AC96B11 /* Pods-Meteo Poznań.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Meteo Poznań/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1CC990881B36C80B007CF656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Meteo PoznańTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meteo Poznań.app/Meteo Poznań";
+			};
+			name = Debug;
+		};
+		1CC990891B36C80B007CF656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Meteo PoznańTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meteo Poznań.app/Meteo Poznań";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CC9905C1B36C80A007CF656 /* Build configuration list for PBXProject "Meteo Poznań" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC990821B36C80A007CF656 /* Debug */,
+				1CC990831B36C80A007CF656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC990841B36C80A007CF656 /* Build configuration list for PBXNativeTarget "Meteo Poznań" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC990851B36C80A007CF656 /* Debug */,
+				1CC990861B36C80A007CF656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC990871B36C80B007CF656 /* Build configuration list for PBXNativeTarget "Meteo PoznańTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC990881B36C80B007CF656 /* Debug */,
+				1CC990891B36C80B007CF656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CC990591B36C80A007CF656 /* Project object */;
+}

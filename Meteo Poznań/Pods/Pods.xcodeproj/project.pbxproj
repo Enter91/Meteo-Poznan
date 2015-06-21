@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0590F0579F07F4E1E0A6627A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD31B9687ADE52D47E66DFB4 /* MobileCoreServices.framework */; };
+		06F7C3D2D3C0CEA3AE56853A /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FE9E8E5085912EED9FA7EDF /* AFURLSessionManager.h */; };
+		1134E1D72ED7A465E97461F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB9977088DDA1C6C3E12DA9 /* Foundation.framework */; };
+		1359BFABF27747027E91802A /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC7812934DE0632318F5CE1 /* AFHTTPRequestOperation.h */; };
+		188314853561D7E0252E4587 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD9B9F8CA8E52F513D9B056 /* AFURLSessionManager.m */; };
+		235B099BD2D02DB48DC35263 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB9977088DDA1C6C3E12DA9 /* Foundation.framework */; };
+		33FC58B27AEA9B62FD9E4EF7 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1019505D112D3B476C349E02 /* AFHTTPRequestOperationManager.h */; };
+		350B4C98F20FBBEB0176D585 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E59B99836A733E6E97DC6FC8 /* UIImageView+AFNetworking.h */; };
+		36A98AF46530E3228C464FFF /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CA73E86410290025119AFD /* UIAlertView+AFNetworking.m */; };
+		3EC961F1723835276B51E8C7 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C1D0195231A3F60722A2741 /* AFNetworkActivityIndicatorManager.h */; };
+		50E624791F4D087C2772BC5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB9977088DDA1C6C3E12DA9 /* Foundation.framework */; };
+		5147E4391368ED16EC6F6890 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3256F1A76F99B98C7E1893 /* AFURLConnectionOperation.m */; };
+		55CB6BD840F8569E8E63F3B0 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDB80CFC86510DBA533629 /* AFNetworkActivityIndicatorManager.m */; };
+		5C712AC302B7267993698F6C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EC394D8A6CFA845B2DAA99 /* AFURLRequestSerialization.m */; };
+		5C82D53DDB73FDAD19519F4A /* Pods-Meteo Poznań-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B300149A241119330C94DB2D /* Pods-Meteo Poznań-dummy.m */; };
+		60B1A25D22E158F76DBD4D7B /* NSObject+Motis.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F7D8653F6F72C958F40337 /* NSObject+Motis.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		60EFFFC5D3A320305D73B389 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F3C7C31EFDFA40B6CB51DF /* UIButton+AFNetworking.h */; };
+		619B9D9942C369B02F97984D /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 950DCD0DC4D7077E49590EF1 /* AFHTTPRequestOperation.m */; };
+		669E6A4D0FD2391BD8296461 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = F6135E7284083EF16D5032E0 /* AFSecurityPolicy.h */; };
+		74025CE3234AB5211F65F4B6 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 41BF6B2787469B3A46C5E60E /* AFNetworking.h */; };
+		78AD097C849A141C32B81C2F /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ED76E7A80BFA7810E9F840 /* UIRefreshControl+AFNetworking.m */; };
+		8323BBFD3807E0D90F4BCF2A /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B47E440E2B2C82207474E65A /* AFURLResponseSerialization.h */; };
+		868EC1F072FD883BAD3E916B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4492DA2D498EE81E04D45BD0 /* Security.framework */; };
+		8F6640C5DB0C0CB0852FDE02 /* Pods-Meteo Poznań-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 386A23CE9E1222CB49E5BB84 /* Pods-Meteo Poznań-AFNetworking-dummy.m */; };
+		95588FEC1242A6E6C9C65F5F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A62B6AB4B69D4EC6EF8807 /* AFNetworkReachabilityManager.m */; };
+		967DF272CDBE19D6A53AAC00 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB5AF4C2A6C7303EC221B57 /* UIRefreshControl+AFNetworking.h */; };
+		9B113442DD46F411A5CB699A /* Pods-Meteo Poznań-DejalActivityView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8E72DFB8B8EA05E8931FB /* Pods-Meteo Poznań-DejalActivityView-dummy.m */; };
+		A074F14D7E96164F4B6BFAC1 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = EBCFD24416F5EFA3C38923E6 /* UIActivityIndicatorView+AFNetworking.h */; };
+		A08B8A98119E241CD945835E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA2EAE18B828145015C82DA /* AFHTTPSessionManager.m */; };
+		A2C4D8C883FCBED38283F2F1 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F56DC2B07C5E3DF09334A10 /* AFSecurityPolicy.m */; };
+		A41DD3BF65B564C55678E13E /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE588D6A209EE79B9B78F321 /* DejalActivityView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A5AB56DE66A7BC29CFA2BF43 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6ACBDF063BDC370915AC61 /* UIActivityIndicatorView+AFNetworking.m */; };
+		AC1F5E767B172D7D06999BB1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC9E754C49C3F5160DEE841 /* UIWebView+AFNetworking.m */; };
+		AD8474C70A851E5E4FD8AD8B /* NSObject+Motis.h in Headers */ = {isa = PBXBuildFile; fileRef = 02473697418636FBFD3438FE /* NSObject+Motis.h */; };
+		B1259C4A4FABC40DDA008DC4 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A133E9FF93C664D31044772 /* UIProgressView+AFNetworking.m */; };
+		B35F495287E7E5349A394443 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B49BC92828B3F8CB26E0C858 /* UIAlertView+AFNetworking.h */; };
+		B48C0741B30896B5CF6E3607 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 64448FC2BBA4CA6F6AB82522 /* UIImageView+AFNetworking.m */; };
+		BFB6E2BC26DED83849A413B6 /* Motis.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FBEEC5AB84545F4467F74ED /* Motis.h */; };
+		C2DFFB921C3B381C39B6D161 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA746D238356F154DD02FB2 /* UIWebView+AFNetworking.h */; };
+		C3F8D5B2EC3DFD1B1355199E /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BD1F571EEC049406DEE4FE6A /* AFHTTPSessionManager.h */; };
+		C43C13017796897E5ED91569 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FA83CF39FA59ED0DB7FD05 /* UIButton+AFNetworking.m */; };
+		C563A26D47CA83FE9F629470 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0E11D51F95E26A5D8D36CC /* AFHTTPRequestOperationManager.m */; };
+		CD25EAB7169D767F38D60E22 /* Pods-Meteo Poznań-Motis-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FDB964DAAC17F56F77192A /* Pods-Meteo Poznań-Motis-dummy.m */; };
+		D273400D4B950B37C92CDF42 /* DejalActivityView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4910332312C17CC5D155E7 /* DejalActivityView.h */; };
+		D516024A4C442432CF8C5DC5 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C92032298DCB5079DD20DB5 /* AFNetworkReachabilityManager.h */; };
+		D7CEA9330555B850D4FF5A62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4C809F40D33205AA61BB4F /* UIKit.framework */; };
+		D9F75C1A2AD18EF3A1496D60 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBC66B1E361AAA51B55CEBB /* AFURLResponseSerialization.m */; };
+		E473F38230D7E0BF8E9B6D2A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F6F60C7150F8D8F4B13DBD /* SystemConfiguration.framework */; };
+		EB379BB8BBD0CB6C14ED4266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB9977088DDA1C6C3E12DA9 /* Foundation.framework */; };
+		EE24B7FFCA577F57602EB05F /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF0DEA82EA2201FB9F60235 /* UIKit+AFNetworking.h */; };
+		F36758515B4586F8A56F7FAC /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B37EF4893811D035B3BF759 /* AFURLConnectionOperation.h */; };
+		F6347B600BEAE363645CC625 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = D27F2B31DB0E4B6B34787937 /* AFURLRequestSerialization.h */; };
+		F7C63F12F79AB28D62E8F0F9 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C0783C66B7E94947CD6121 /* UIProgressView+AFNetworking.h */; };
+		FEB8BC06829F0ABB9F278116 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808220275491669D9E47C946 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10E1320D822CDCA38BB5E455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FD84789C7713DAC3F890710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E342EA5A624CCE2371B2B7;
+			remoteInfo = "Pods-Meteo Poznań-Motis";
+		};
+		8190C01C9E68D8361E93D91A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FD84789C7713DAC3F890710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5EF56A646BF6FF926787C34;
+			remoteInfo = "Pods-Meteo Poznań-DejalActivityView";
+		};
+		8A1B12389B6D309D6D3FC00E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FD84789C7713DAC3F890710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DDE1FD6B41C3D60BB93333D;
+			remoteInfo = "Pods-Meteo Poznań-AFNetworking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007C1F766D92AA5743074FCC /* Pods-Meteo Poznań-Motis-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meteo Poznań-Motis-prefix.pch"; sourceTree = "<group>"; };
+		01FDB964DAAC17F56F77192A /* Pods-Meteo Poznań-Motis-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meteo Poznań-Motis-dummy.m"; sourceTree = "<group>"; };
+		02473697418636FBFD3438FE /* NSObject+Motis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+Motis.h"; sourceTree = "<group>"; };
+		0B37EF4893811D035B3BF759 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		0B6ACBDF063BDC370915AC61 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		0C1D0195231A3F60722A2741 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		0D3256F1A76F99B98C7E1893 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		0F56DC2B07C5E3DF09334A10 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		1019505D112D3B476C349E02 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		10EC394D8A6CFA845B2DAA99 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		1EF8E72DFB8B8EA05E8931FB /* Pods-Meteo Poznań-DejalActivityView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meteo Poznań-DejalActivityView-dummy.m"; sourceTree = "<group>"; };
+		2FC7812934DE0632318F5CE1 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		2FE9E8E5085912EED9FA7EDF /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		355646A5E7C93139D35E6956 /* Pods-Meteo Poznań-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Meteo Poznań-resources.sh"; sourceTree = "<group>"; };
+		386A23CE9E1222CB49E5BB84 /* Pods-Meteo Poznań-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meteo Poznań-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		3CB9977088DDA1C6C3E12DA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41BF6B2787469B3A46C5E60E /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		4492DA2D498EE81E04D45BD0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		4C27483C1D886C1DDFFD6211 /* libPods-Meteo Poznań-DejalActivityView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Meteo Poznań-DejalActivityView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F6F60C7150F8D8F4B13DBD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		57DFE476209D24155270B3AF /* Pods-Meteo Poznań.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meteo Poznań.debug.xcconfig"; sourceTree = "<group>"; };
+		5FBEEC5AB84545F4467F74ED /* Motis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Motis.h; sourceTree = "<group>"; };
+		60FA83CF39FA59ED0DB7FD05 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		625DA6D9BEB4727526DD49CF /* Pods-Meteo Poznań-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meteo Poznań-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		64448FC2BBA4CA6F6AB82522 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		66C0783C66B7E94947CD6121 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		67E9786F93BB3390FAE43C2F /* Pods-Meteo Poznań-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meteo Poznań-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A133E9FF93C664D31044772 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		6C92032298DCB5079DD20DB5 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		77ED76E7A80BFA7810E9F840 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		808220275491669D9E47C946 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		81690D796FC27C17C75BE795 /* Pods-Meteo Poznań-DejalActivityView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meteo Poznań-DejalActivityView-prefix.pch"; sourceTree = "<group>"; };
+		851AE5E39858E891A78CB752 /* Pods-Meteo Poznań-DejalActivityView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meteo Poznań-DejalActivityView.xcconfig"; sourceTree = "<group>"; };
+		8BB5AF4C2A6C7303EC221B57 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		8F4910332312C17CC5D155E7 /* DejalActivityView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
+		92932F59A0EDC5EF205D6301 /* Pods-Meteo Poznań-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meteo Poznań-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		950DCD0DC4D7077E49590EF1 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		95666C451E66DAAD86DC75CE /* Pods-Meteo Poznań-DejalActivityView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meteo Poznań-DejalActivityView-Private.xcconfig"; sourceTree = "<group>"; };
+		9FC9E754C49C3F5160DEE841 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		9FCDB80CFC86510DBA533629 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		A6CA73E86410290025119AFD /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		B1E8CEF98FAB3FCB2CE44587 /* Pods-Meteo Poznań-Motis-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meteo Poznań-Motis-Private.xcconfig"; sourceTree = "<group>"; };
+		B300149A241119330C94DB2D /* Pods-Meteo Poznań-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meteo Poznań-dummy.m"; sourceTree = "<group>"; };
+		B3A62B6AB4B69D4EC6EF8807 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		B47E440E2B2C82207474E65A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		B49BC92828B3F8CB26E0C858 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		BBA2EAE18B828145015C82DA /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		BD1F571EEC049406DEE4FE6A /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		BD31B9687ADE52D47E66DFB4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		BE0E11D51F95E26A5D8D36CC /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		BEF0DEA82EA2201FB9F60235 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		BF5F2C54B02557567B01E2BA /* Pods-Meteo Poznań-Motis.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meteo Poznań-Motis.xcconfig"; sourceTree = "<group>"; };
+		CE588D6A209EE79B9B78F321 /* DejalActivityView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
+		D27F2B31DB0E4B6B34787937 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		D9F7D8653F6F72C958F40337 /* NSObject+Motis.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Motis.m"; sourceTree = "<group>"; };
+		DC8B842186C120C4082FB843 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DE375B56F59E4A836A4B825C /* Pods-Meteo Poznań-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meteo Poznań-environment.h"; sourceTree = "<group>"; };
+		DEBC66B1E361AAA51B55CEBB /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		DFC8A46A9482854764CA8773 /* libPods-Meteo Poznań.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Meteo Poznań.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A3C95E13516535D048DBD0 /* Pods-Meteo Poznań.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meteo Poznań.release.xcconfig"; sourceTree = "<group>"; };
+		E584EA94D6765B8CD57FF9A4 /* libPods-Meteo Poznań-Motis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Meteo Poznań-Motis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59B99836A733E6E97DC6FC8 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		E5C5C5250AFE68AEC1E9F172 /* libPods-Meteo Poznań-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Meteo Poznań-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCFD24416F5EFA3C38923E6 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		ECA746D238356F154DD02FB2 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		EDD9B9F8CA8E52F513D9B056 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		EE11EF9598D95FA52A9664A9 /* Pods-Meteo Poznań-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meteo Poznań-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		F3F3C7C31EFDFA40B6CB51DF /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		F6135E7284083EF16D5032E0 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		FD7995B4D369F99214B97DB1 /* Pods-Meteo Poznań-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meteo Poznań-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF4C809F40D33205AA61BB4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FE959841BD02078262B1866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB379BB8BBD0CB6C14ED4266 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EED0E5AE32951FA8C7DB4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB8BC06829F0ABB9F278116 /* CoreGraphics.framework in Frameworks */,
+				50E624791F4D087C2772BC5C /* Foundation.framework in Frameworks */,
+				0590F0579F07F4E1E0A6627A /* MobileCoreServices.framework in Frameworks */,
+				868EC1F072FD883BAD3E916B /* Security.framework in Frameworks */,
+				E473F38230D7E0BF8E9B6D2A /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79B6FCAA41492BBF89B7EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235B099BD2D02DB48DC35263 /* Foundation.framework in Frameworks */,
+				D7CEA9330555B850D4FF5A62 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E486F1AC980D74D427A81B61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1134E1D72ED7A465E97461F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D5D668CD70E5DC74D2A401A = {
+			isa = PBXGroup;
+			children = (
+				DC8B842186C120C4082FB843 /* Podfile */,
+				45CC7475C84F5BCD4FC786F6 /* Frameworks */,
+				9A8D534CF10E3D436A60A681 /* Pods */,
+				93D056E157DF508102BCFA44 /* Products */,
+				9A4888B7F45389AD99B1AA29 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		1239498AA545962331757DDD /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0C1D0195231A3F60722A2741 /* AFNetworkActivityIndicatorManager.h */,
+				9FCDB80CFC86510DBA533629 /* AFNetworkActivityIndicatorManager.m */,
+				EBCFD24416F5EFA3C38923E6 /* UIActivityIndicatorView+AFNetworking.h */,
+				0B6ACBDF063BDC370915AC61 /* UIActivityIndicatorView+AFNetworking.m */,
+				B49BC92828B3F8CB26E0C858 /* UIAlertView+AFNetworking.h */,
+				A6CA73E86410290025119AFD /* UIAlertView+AFNetworking.m */,
+				F3F3C7C31EFDFA40B6CB51DF /* UIButton+AFNetworking.h */,
+				60FA83CF39FA59ED0DB7FD05 /* UIButton+AFNetworking.m */,
+				E59B99836A733E6E97DC6FC8 /* UIImageView+AFNetworking.h */,
+				64448FC2BBA4CA6F6AB82522 /* UIImageView+AFNetworking.m */,
+				BEF0DEA82EA2201FB9F60235 /* UIKit+AFNetworking.h */,
+				66C0783C66B7E94947CD6121 /* UIProgressView+AFNetworking.h */,
+				6A133E9FF93C664D31044772 /* UIProgressView+AFNetworking.m */,
+				8BB5AF4C2A6C7303EC221B57 /* UIRefreshControl+AFNetworking.h */,
+				77ED76E7A80BFA7810E9F840 /* UIRefreshControl+AFNetworking.m */,
+				ECA746D238356F154DD02FB2 /* UIWebView+AFNetworking.h */,
+				9FC9E754C49C3F5160DEE841 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		137E28101E745B81F129D037 /* Motis */ = {
+			isa = PBXGroup;
+			children = (
+				5FBEEC5AB84545F4467F74ED /* Motis.h */,
+				02473697418636FBFD3438FE /* NSObject+Motis.h */,
+				D9F7D8653F6F72C958F40337 /* NSObject+Motis.m */,
+				1C8AAD91CA737331C8F797B5 /* Support Files */,
+			);
+			path = Motis;
+			sourceTree = "<group>";
+		};
+		1C8AAD91CA737331C8F797B5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF5F2C54B02557567B01E2BA /* Pods-Meteo Poznań-Motis.xcconfig */,
+				B1E8CEF98FAB3FCB2CE44587 /* Pods-Meteo Poznań-Motis-Private.xcconfig */,
+				01FDB964DAAC17F56F77192A /* Pods-Meteo Poznań-Motis-dummy.m */,
+				007C1F766D92AA5743074FCC /* Pods-Meteo Poznań-Motis-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Meteo Poznań-Motis";
+			sourceTree = "<group>";
+		};
+		45CC7475C84F5BCD4FC786F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E87729BEB00A7EAFFFC4ADD5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54FE8D64EDD824FCB37FCECA /* DejalActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				8F4910332312C17CC5D155E7 /* DejalActivityView.h */,
+				CE588D6A209EE79B9B78F321 /* DejalActivityView.m */,
+				8C542EE38CD713DCFF285859 /* Support Files */,
+			);
+			path = DejalActivityView;
+			sourceTree = "<group>";
+		};
+		57B37837760A9CA326356AF7 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				2FC7812934DE0632318F5CE1 /* AFHTTPRequestOperation.h */,
+				950DCD0DC4D7077E49590EF1 /* AFHTTPRequestOperation.m */,
+				1019505D112D3B476C349E02 /* AFHTTPRequestOperationManager.h */,
+				BE0E11D51F95E26A5D8D36CC /* AFHTTPRequestOperationManager.m */,
+				0B37EF4893811D035B3BF759 /* AFURLConnectionOperation.h */,
+				0D3256F1A76F99B98C7E1893 /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		6AFF5619054AA6A716569B62 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE11EF9598D95FA52A9664A9 /* Pods-Meteo Poznań-AFNetworking.xcconfig */,
+				625DA6D9BEB4727526DD49CF /* Pods-Meteo Poznań-AFNetworking-Private.xcconfig */,
+				386A23CE9E1222CB49E5BB84 /* Pods-Meteo Poznań-AFNetworking-dummy.m */,
+				92932F59A0EDC5EF205D6301 /* Pods-Meteo Poznań-AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Meteo Poznań-AFNetworking";
+			sourceTree = "<group>";
+		};
+		8C542EE38CD713DCFF285859 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				851AE5E39858E891A78CB752 /* Pods-Meteo Poznań-DejalActivityView.xcconfig */,
+				95666C451E66DAAD86DC75CE /* Pods-Meteo Poznań-DejalActivityView-Private.xcconfig */,
+				1EF8E72DFB8B8EA05E8931FB /* Pods-Meteo Poznań-DejalActivityView-dummy.m */,
+				81690D796FC27C17C75BE795 /* Pods-Meteo Poznań-DejalActivityView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Meteo Poznań-DejalActivityView";
+			sourceTree = "<group>";
+		};
+		93D056E157DF508102BCFA44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFC8A46A9482854764CA8773 /* libPods-Meteo Poznań.a */,
+				E5C5C5250AFE68AEC1E9F172 /* libPods-Meteo Poznań-AFNetworking.a */,
+				4C27483C1D886C1DDFFD6211 /* libPods-Meteo Poznań-DejalActivityView.a */,
+				E584EA94D6765B8CD57FF9A4 /* libPods-Meteo Poznań-Motis.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		967AFEE30E9E6CC6090D6065 /* Pods-Meteo Poznań */ = {
+			isa = PBXGroup;
+			children = (
+				67E9786F93BB3390FAE43C2F /* Pods-Meteo Poznań-acknowledgements.markdown */,
+				FD7995B4D369F99214B97DB1 /* Pods-Meteo Poznań-acknowledgements.plist */,
+				B300149A241119330C94DB2D /* Pods-Meteo Poznań-dummy.m */,
+				DE375B56F59E4A836A4B825C /* Pods-Meteo Poznań-environment.h */,
+				355646A5E7C93139D35E6956 /* Pods-Meteo Poznań-resources.sh */,
+				57DFE476209D24155270B3AF /* Pods-Meteo Poznań.debug.xcconfig */,
+				E2A3C95E13516535D048DBD0 /* Pods-Meteo Poznań.release.xcconfig */,
+			);
+			name = "Pods-Meteo Poznań";
+			path = "Target Support Files/Pods-Meteo Poznań";
+			sourceTree = "<group>";
+		};
+		9A4888B7F45389AD99B1AA29 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				967AFEE30E9E6CC6090D6065 /* Pods-Meteo Poznań */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9A8D534CF10E3D436A60A681 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4DE5D68F8F7B349F278213F /* AFNetworking */,
+				54FE8D64EDD824FCB37FCECA /* DejalActivityView */,
+				137E28101E745B81F129D037 /* Motis */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D6D839B120CE351F3BFD870 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F571EEC049406DEE4FE6A /* AFHTTPSessionManager.h */,
+				BBA2EAE18B828145015C82DA /* AFHTTPSessionManager.m */,
+				2FE9E8E5085912EED9FA7EDF /* AFURLSessionManager.h */,
+				EDD9B9F8CA8E52F513D9B056 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		A0103FCC2A8EC17CC5B9F9EA /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				D27F2B31DB0E4B6B34787937 /* AFURLRequestSerialization.h */,
+				10EC394D8A6CFA845B2DAA99 /* AFURLRequestSerialization.m */,
+				B47E440E2B2C82207474E65A /* AFURLResponseSerialization.h */,
+				DEBC66B1E361AAA51B55CEBB /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		B32726329A27D78A2D9C34D8 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				F6135E7284083EF16D5032E0 /* AFSecurityPolicy.h */,
+				0F56DC2B07C5E3DF09334A10 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		E4DE5D68F8F7B349F278213F /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				41BF6B2787469B3A46C5E60E /* AFNetworking.h */,
+				57B37837760A9CA326356AF7 /* NSURLConnection */,
+				9D6D839B120CE351F3BFD870 /* NSURLSession */,
+				FF96956A4ACE50D0D5B0F0BF /* Reachability */,
+				B32726329A27D78A2D9C34D8 /* Security */,
+				A0103FCC2A8EC17CC5B9F9EA /* Serialization */,
+				6AFF5619054AA6A716569B62 /* Support Files */,
+				1239498AA545962331757DDD /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		E87729BEB00A7EAFFFC4ADD5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				808220275491669D9E47C946 /* CoreGraphics.framework */,
+				3CB9977088DDA1C6C3E12DA9 /* Foundation.framework */,
+				BD31B9687ADE52D47E66DFB4 /* MobileCoreServices.framework */,
+				4492DA2D498EE81E04D45BD0 /* Security.framework */,
+				52F6F60C7150F8D8F4B13DBD /* SystemConfiguration.framework */,
+				FF4C809F40D33205AA61BB4F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FF96956A4ACE50D0D5B0F0BF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				6C92032298DCB5079DD20DB5 /* AFNetworkReachabilityManager.h */,
+				B3A62B6AB4B69D4EC6EF8807 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AAC72B8A25A2B909EDD647F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB6E2BC26DED83849A413B6 /* Motis.h in Headers */,
+				AD8474C70A851E5E4FD8AD8B /* NSObject+Motis.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE8E754AE954EA2AA0DB0BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1359BFABF27747027E91802A /* AFHTTPRequestOperation.h in Headers */,
+				33FC58B27AEA9B62FD9E4EF7 /* AFHTTPRequestOperationManager.h in Headers */,
+				C3F8D5B2EC3DFD1B1355199E /* AFHTTPSessionManager.h in Headers */,
+				3EC961F1723835276B51E8C7 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				D516024A4C442432CF8C5DC5 /* AFNetworkReachabilityManager.h in Headers */,
+				74025CE3234AB5211F65F4B6 /* AFNetworking.h in Headers */,
+				669E6A4D0FD2391BD8296461 /* AFSecurityPolicy.h in Headers */,
+				F36758515B4586F8A56F7FAC /* AFURLConnectionOperation.h in Headers */,
+				F6347B600BEAE363645CC625 /* AFURLRequestSerialization.h in Headers */,
+				8323BBFD3807E0D90F4BCF2A /* AFURLResponseSerialization.h in Headers */,
+				06F7C3D2D3C0CEA3AE56853A /* AFURLSessionManager.h in Headers */,
+				A074F14D7E96164F4B6BFAC1 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				B35F495287E7E5349A394443 /* UIAlertView+AFNetworking.h in Headers */,
+				60EFFFC5D3A320305D73B389 /* UIButton+AFNetworking.h in Headers */,
+				350B4C98F20FBBEB0176D585 /* UIImageView+AFNetworking.h in Headers */,
+				EE24B7FFCA577F57602EB05F /* UIKit+AFNetworking.h in Headers */,
+				F7C63F12F79AB28D62E8F0F9 /* UIProgressView+AFNetworking.h in Headers */,
+				967DF272CDBE19D6A53AAC00 /* UIRefreshControl+AFNetworking.h in Headers */,
+				C2DFFB921C3B381C39B6D161 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D42061963C42DB696943CE7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D273400D4B950B37C92CDF42 /* DejalActivityView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		07E342EA5A624CCE2371B2B7 /* Pods-Meteo Poznań-Motis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7081DAA2632F977504D772E8 /* Build configuration list for PBXNativeTarget "Pods-Meteo Poznań-Motis" */;
+			buildPhases = (
+				E43D43A6A3147C9F12CC4862 /* Sources */,
+				1FE959841BD02078262B1866 /* Frameworks */,
+				AAC72B8A25A2B909EDD647F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Meteo Poznań-Motis";
+			productName = "Pods-Meteo Poznań-Motis";
+			productReference = E584EA94D6765B8CD57FF9A4 /* libPods-Meteo Poznań-Motis.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1DDE1FD6B41C3D60BB93333D /* Pods-Meteo Poznań-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E0A6675D1A6735D8198643E /* Build configuration list for PBXNativeTarget "Pods-Meteo Poznań-AFNetworking" */;
+			buildPhases = (
+				DFFA8DDB2E3358A7D857A8D5 /* Sources */,
+				93EED0E5AE32951FA8C7DB4B /* Frameworks */,
+				CBE8E754AE954EA2AA0DB0BA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Meteo Poznań-AFNetworking";
+			productName = "Pods-Meteo Poznań-AFNetworking";
+			productReference = E5C5C5250AFE68AEC1E9F172 /* libPods-Meteo Poznań-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B5EF56A646BF6FF926787C34 /* Pods-Meteo Poznań-DejalActivityView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30E4287043087DC8B8ED3F6F /* Build configuration list for PBXNativeTarget "Pods-Meteo Poznań-DejalActivityView" */;
+			buildPhases = (
+				26EC88A888889D1A8F714BE2 /* Sources */,
+				B79B6FCAA41492BBF89B7EF2 /* Frameworks */,
+				D42061963C42DB696943CE7E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Meteo Poznań-DejalActivityView";
+			productName = "Pods-Meteo Poznań-DejalActivityView";
+			productReference = 4C27483C1D886C1DDFFD6211 /* libPods-Meteo Poznań-DejalActivityView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C088C015DFE0A07FE4094241 /* Pods-Meteo Poznań */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A1BC6136DE4CDDA17C946EE /* Build configuration list for PBXNativeTarget "Pods-Meteo Poznań" */;
+			buildPhases = (
+				D91B7DEE6896C8AB7014D4D1 /* Sources */,
+				E486F1AC980D74D427A81B61 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57958D6F010D872B7B13EE2E /* PBXTargetDependency */,
+				67C9C4148B34FF40B5D7D5FA /* PBXTargetDependency */,
+				BBAB8116FDB4EE1A7C3439C9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Meteo Poznań";
+			productName = "Pods-Meteo Poznań";
+			productReference = DFC8A46A9482854764CA8773 /* libPods-Meteo Poznań.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FD84789C7713DAC3F890710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = ADFCDB8CFB9F6D86B69BE46B /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0D5D668CD70E5DC74D2A401A;
+			productRefGroup = 93D056E157DF508102BCFA44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C088C015DFE0A07FE4094241 /* Pods-Meteo Poznań */,
+				1DDE1FD6B41C3D60BB93333D /* Pods-Meteo Poznań-AFNetworking */,
+				B5EF56A646BF6FF926787C34 /* Pods-Meteo Poznań-DejalActivityView */,
+				07E342EA5A624CCE2371B2B7 /* Pods-Meteo Poznań-Motis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26EC88A888889D1A8F714BE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41DD3BF65B564C55678E13E /* DejalActivityView.m in Sources */,
+				9B113442DD46F411A5CB699A /* Pods-Meteo Poznań-DejalActivityView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91B7DEE6896C8AB7014D4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C82D53DDB73FDAD19519F4A /* Pods-Meteo Poznań-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFA8DDB2E3358A7D857A8D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619B9D9942C369B02F97984D /* AFHTTPRequestOperation.m in Sources */,
+				C563A26D47CA83FE9F629470 /* AFHTTPRequestOperationManager.m in Sources */,
+				A08B8A98119E241CD945835E /* AFHTTPSessionManager.m in Sources */,
+				55CB6BD840F8569E8E63F3B0 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				95588FEC1242A6E6C9C65F5F /* AFNetworkReachabilityManager.m in Sources */,
+				A2C4D8C883FCBED38283F2F1 /* AFSecurityPolicy.m in Sources */,
+				5147E4391368ED16EC6F6890 /* AFURLConnectionOperation.m in Sources */,
+				5C712AC302B7267993698F6C /* AFURLRequestSerialization.m in Sources */,
+				D9F75C1A2AD18EF3A1496D60 /* AFURLResponseSerialization.m in Sources */,
+				188314853561D7E0252E4587 /* AFURLSessionManager.m in Sources */,
+				8F6640C5DB0C0CB0852FDE02 /* Pods-Meteo Poznań-AFNetworking-dummy.m in Sources */,
+				A5AB56DE66A7BC29CFA2BF43 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				36A98AF46530E3228C464FFF /* UIAlertView+AFNetworking.m in Sources */,
+				C43C13017796897E5ED91569 /* UIButton+AFNetworking.m in Sources */,
+				B48C0741B30896B5CF6E3607 /* UIImageView+AFNetworking.m in Sources */,
+				B1259C4A4FABC40DDA008DC4 /* UIProgressView+AFNetworking.m in Sources */,
+				78AD097C849A141C32B81C2F /* UIRefreshControl+AFNetworking.m in Sources */,
+				AC1F5E767B172D7D06999BB1 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43D43A6A3147C9F12CC4862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B1A25D22E158F76DBD4D7B /* NSObject+Motis.m in Sources */,
+				CD25EAB7169D767F38D60E22 /* Pods-Meteo Poznań-Motis-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57958D6F010D872B7B13EE2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Meteo Poznań-AFNetworking";
+			target = 1DDE1FD6B41C3D60BB93333D /* Pods-Meteo Poznań-AFNetworking */;
+			targetProxy = 8A1B12389B6D309D6D3FC00E /* PBXContainerItemProxy */;
+		};
+		67C9C4148B34FF40B5D7D5FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Meteo Poznań-DejalActivityView";
+			target = B5EF56A646BF6FF926787C34 /* Pods-Meteo Poznań-DejalActivityView */;
+			targetProxy = 8190C01C9E68D8361E93D91A /* PBXContainerItemProxy */;
+		};
+		BBAB8116FDB4EE1A7C3439C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Meteo Poznań-Motis";
+			target = 07E342EA5A624CCE2371B2B7 /* Pods-Meteo Poznań-Motis */;
+			targetProxy = 10E1320D822CDCA38BB5E455 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17AB4FB17C3198D9CD7A28BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95666C451E66DAAD86DC75CE /* Pods-Meteo Poznań-DejalActivityView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Meteo Poznań-DejalActivityView/Pods-Meteo Poznań-DejalActivityView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3B687050A40089976B336C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4718297EB6EEF3514FF7839A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E8CEF98FAB3FCB2CE44587 /* Pods-Meteo Poznań-Motis-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Meteo Poznań-Motis/Pods-Meteo Poznań-Motis-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4E5EFBF666F660DC5A92378B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625DA6D9BEB4727526DD49CF /* Pods-Meteo Poznań-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Meteo Poznań-AFNetworking/Pods-Meteo Poznań-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		59655B6C48774D045FF64381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B9826E82223BD0F4E9175F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2A3C95E13516535D048DBD0 /* Pods-Meteo Poznań.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B2520A24CAD8F7666F33FF09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57DFE476209D24155270B3AF /* Pods-Meteo Poznań.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA3E513C1C1ECAD3767B4ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625DA6D9BEB4727526DD49CF /* Pods-Meteo Poznań-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Meteo Poznań-AFNetworking/Pods-Meteo Poznań-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EAAD99A51C6BCA0C3E0D230B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95666C451E66DAAD86DC75CE /* Pods-Meteo Poznań-DejalActivityView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Meteo Poznań-DejalActivityView/Pods-Meteo Poznań-DejalActivityView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F9B5AE41ECE2B7B0B17DCCC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E8CEF98FAB3FCB2CE44587 /* Pods-Meteo Poznań-Motis-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Meteo Poznań-Motis/Pods-Meteo Poznań-Motis-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30E4287043087DC8B8ED3F6F /* Build configuration list for PBXNativeTarget "Pods-Meteo Poznań-DejalActivityView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAD99A51C6BCA0C3E0D230B /* Debug */,
+				17AB4FB17C3198D9CD7A28BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E0A6675D1A6735D8198643E /* Build configuration list for PBXNativeTarget "Pods-Meteo Poznań-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3E513C1C1ECAD3767B4ECD /* Debug */,
+				4E5EFBF666F660DC5A92378B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7081DAA2632F977504D772E8 /* Build configuration list for PBXNativeTarget "Pods-Meteo Poznań-Motis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4718297EB6EEF3514FF7839A /* Debug */,
+				F9B5AE41ECE2B7B0B17DCCC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A1BC6136DE4CDDA17C946EE /* Build configuration list for PBXNativeTarget "Pods-Meteo Poznań" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2520A24CAD8F7666F33FF09 /* Debug */,
+				8B9826E82223BD0F4E9175F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFCDB8CFB9F6D86B69BE46B /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59655B6C48774D045FF64381 /* Debug */,
+				3B687050A40089976B336C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FD84789C7713DAC3F890710 /* Project object */;
+}

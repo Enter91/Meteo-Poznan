@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
+
+target 'Meteo Poznań' do
+
+pod 'AFNetworking', '~> 2.0'
+pod 'DejalActivityView'
+pod 'Motis', '~>1.0.2'
+
+end
+
+target 'Meteo PoznańTests' do
+
+end
+
