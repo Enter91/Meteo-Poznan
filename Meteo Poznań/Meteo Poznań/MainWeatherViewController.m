@@ -101,7 +101,6 @@
     } else {
         return CGSizeMake(CGRectGetMidX(self.view.frame)-18, 200);
     }
-    
 }
 
 #pragma mark- UIAlertView Delegates
