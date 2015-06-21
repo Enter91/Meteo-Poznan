@@ -70,7 +70,7 @@ static bool isFirstAccess = YES;
 
 - (void)downloadCurrentWeatherWithCompletionBlock:(void (^)(BOOL status))completionBlock {
     
-    [AFHTTPRequestMaker sendGETRequestToAddress:@"data/2.5/forecast/daily?q=Poznan&mode=json&units=metric&cnt=7" successBlock:^(NSInteger statusCode, id responseObject) {
+    [AFHTTPRequestMaker sendGETRequestToAddress:@"http://api.openweathermap.org/data/2.5/forecast/daily?q=Poznan&mode=json&units=metric&cnt=7" successBlock:^(NSInteger statusCode, id responseObject) {
         if (self.weatherForecast) {
             self.weatherForecast = nil;
         }

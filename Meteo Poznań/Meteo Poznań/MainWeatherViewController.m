@@ -11,6 +11,7 @@
 #import "DayWeatherCollectionViewCell.h"
 #import "WeatherManager.h"
 #import <DejalActivityView.h>
+#import <UIImageView+AFNetworking.h>
 
 @interface MainWeatherViewController () <UICollectionViewDelegateFlowLayout, UIAlertViewDelegate>
 
@@ -54,12 +55,12 @@
     static NSString *identifier = @"Cell";
     
     DayWeatherCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    cell.contentView.frame = cell.bounds;
     
     WeatherForecastModel *forecastModel = [WeatherManager sharedInstance].weatherForecast;
     DayWeatherModel *weather = [forecastModel.daysWeatherForecastArray objectAtIndex:indexPath.row];
     
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:[weather.dateTimestamp doubleValue]];
-    
     
     cell.cityLabel.text = forecastModel.city.cityName;
     cell.dayLabel.text = [date nameOfDay];
@@ -78,11 +79,29 @@
         cell.temperatureLabel.text = [NSString stringWithFormat:@"%.1f°C",[weather.temp.dayTemp floatValue]];
     }
     
+    [cell.temperatureLabel adjustsFontSizeToFitWidth];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://openweathermap.org/img/w/%@.png", [[weather.weather firstObject] icon]]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    __weak DayWeatherCollectionViewCell *weakCell = cell;
+    
+    [cell.weatherIconImageView setImageWithURLRequest:request
+                                     placeholderImage:nil
+                                              success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                                  weakCell.weatherIconImageView.image = image;
+                                              } failure:nil];
+    
     return cell;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(CGRectGetMidX(self.view.frame)-15, 200);
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        return CGSizeMake(240, 320);
+    } else {
+        return CGSizeMake(CGRectGetMidX(self.view.frame)-18, 200);
+    }
+    
 }
 
 #pragma mark- UIAlertView Delegates

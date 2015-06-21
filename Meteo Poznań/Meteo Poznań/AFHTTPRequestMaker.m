@@ -13,7 +13,7 @@
 
 + (void)sendGETRequestToAddress:(NSString *)urlString successBlock:(void (^)(NSInteger statusCode, id responseObject))success failureBlock:(void (^)(NSInteger statusCode, NSError *error))failure {
     
-    NSURL *url = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] relativeToURL:[NSURL URLWithString:@"http://api.openweathermap.org"]];
+    NSURL *url = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
